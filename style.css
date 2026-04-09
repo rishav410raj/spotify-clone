@@ -1,0 +1,305 @@
+body{
+    background-color: black;
+}
+
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    color: white;
+  }
+.main{
+    display: flex;
+    height:calc(100vh - 72px);
+    padding: 0.5rem;
+    background-color: #000;
+   
+
+}
+.sidebar{
+    background-color:#000;
+    width: 340px;
+    border-radius: 1rem;
+    
+}
+.main-content{
+    background-color:#121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow:auto ;
+    padding: 0 1.5rem 0 1.5rem;
+    padding-bottom: 90px;
+}
+.music-player{
+    background-color:black;
+   position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    border-color: #121212;
+}
+.nav{
+    background-color:#121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+.nav-option{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    opacity: 0.7;
+    padding:0.75rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option i {
+font-size: 1.25rem;
+
+}
+.nav-option a{
+    font-size: 1rem ;
+    margin-left:1rem ;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin: 0.5rem;
+    padding:0.5rem 
+}
+.options{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.lib-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.icons {
+    font-size:1.25rem;
+    display: flex;
+}
+.icons i {
+     opacity: 0.7;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.box{
+    min-height: 120px;
+    background-color: #232323;  
+    border-radius: 0.7rem; 
+    margin: 0.75rem 0 1.5rem 0;
+    padding:0.75rem 1rem ;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.box-p2{
+    font-size: 0.75rem;
+    opacity: 0.9;
+    margin-top: 0.8rem;
+}
+.badge{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    height: 2rem;
+    width: fit-content;
+}
+.dark-badge{
+    background-color: black;
+    color: white;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+.sticky-nav-icons{
+  margin-left:0.75rem
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.nav-item{
+    margin-right: 1rem;
+}
+@media(max-width:1000px) {
+    .hide{
+       display: none; 
+    }
+    
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 600;
+    margin-top: 0.4rem;
+    
+}
+.card-information{
+    font-size: 0.7rem;
+    opacity:0.5 ;
+    margin-top: 0.8rem;
+}
+h2{
+    margin-top: 2rem;
+}
+.footer{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+
+}
+.music-player{
+    display: flex;
+    text-align: center;
+
+}
+.album{
+    width: 25%;
+}
+.player{
+    width: 50%;
+}
+.controls{
+    width: 25%;
+}
+.player-controls-icon{
+    height: 1rem;
+    padding: 0.5rem;
+    margin: 0.2rem;
+}
+.progress-bar{
+    width: 70%;
+}
+.album{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+.album-img{
+    height: 55px;
+    width: 55px;
+    border-radius:20% ;
+}
+.album-info{
+    display: flex;
+    flex-direction: column;
+    
+}
+.song-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 4.5rem;
+    opacity: 5;
+    cursor: pointer;
+    
+}
+
+.artist-name {
+    font-size: 12px;
+    color: #b3b3b3;
+    margin-right: 2.5rem;
+    
+
+}
+
+.album-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 16px;
+    color: #b3b3b3;
+
+}
+.song-name:hover {
+    opacity: 0.3;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: #111;
+    padding: 10px 15px;
+  }
+  
+  .icons i {
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .icons i:hover {
+    color: #1db954;   
+  }
+  
+  .icons input[type="range"] {
+    width: 100px;
+    cursor: pointer;
+  }
+  .artist-container {
+    width: 550px;        
+    height: 200px;
+    border-radius: 50%;  
+    text-align: center;
+    display: flex;
+    gap: 1.5rem;
+    top:1.5rem
+
+}
+.artist-container img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.artist-information{
+    opacity: 0.5;
+}
